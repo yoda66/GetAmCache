@@ -5,6 +5,10 @@ function Get-Amcache
 This script loads the AMCache hive from the default Windows location and
 prints relevant data.
 
+Author: Joff Thyer, Penetration Tester and Security Researcher
+        Black Hills Information Security
+        Copyright (c) October 2015
+
 .DESCRIPTION
 This script loads the AMCache hive from the default Windows location and
 prints relevant data.
@@ -21,6 +25,11 @@ selected from that date up through today.
 
 .PARAMETER Ext
 Specify what file extension you want to match.
+
+.EXAMPLE
+PS C:\> Get-Amcache -Since 9/1/2015 -Ext exe
+PS C:\> Get-Amcache -Since 9/1/2015 -Filename *install* -Ext exe
+
 
 #>
 
