@@ -1,5 +1,6 @@
 function Get-Amcache
 {
+#Requires -Version 3.0
 <#
 .SYNOPSIS
 This script loads the AMCache hive from the default Windows location and
